@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gab"
+    app:startDestination="@id/telaPrincipalFragment">
+
+    <fragment
+        android:id="@+id/telaPrincipalFragment"
+        android:name="br.com.zup.desafio_modelo_1.fragment.TelaPrincipalFragment"
+        android:label="SimCity São João"
+        tools:layout="@layout/fragment_tela_principal" >
+        <action
+            android:id="@+id/action_telaPrincipalFragment_to_telaCadastroProdutosFragment"
+            app:destination="@id/telaCadastroProdutosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaCadastroProdutosFragment"
+        android:name="br.com.zup.desafio_modelo_1.fragment.TelaCadastroProdutosFragment"
+        android:label="Produtos"
+        tools:layout="@layout/fragment_tela_cadastro_produtos" />
+</navigation>
